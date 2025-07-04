@@ -1,0 +1,68 @@
+import type { IProduct } from "../interfaces";
+
+export const products: IProduct[] = [
+  {
+    id: 1,
+    image: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=400&q=80",
+    title: "Smart Watch",
+    price: 129.99,
+    description: "Track your fitness and notifications with this stylish smart watch.",
+    quantity: 1,
+  },
+  {
+    id: 2,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Classic Sneakers",
+    price: 79.99,
+    description: "Comfortable and trendy sneakers for everyday wear.",
+    quantity: 1,
+  },
+  {
+    id: 3,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Sunglasses",
+    price: 29.99,
+    description: "Stylish sunglasses with UV protection for sunny days.",
+    quantity: 1,
+  },
+  {
+    id: 4,
+    image: "https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Coffee Mug",
+    price: 14.99,
+    description: "Ceramic mug for your favorite hot beverages.",
+    quantity: 1,
+  },
+  {
+    id: 5,
+    image: "https://plus.unsplash.com/premium_photo-1676717962720-d9a812c8f8c9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Bluetooth Speaker",
+    price: 39.99,
+    description: "Portable Bluetooth speaker with excellent sound quality.",
+    quantity: 1,
+  },
+  {
+    id: 6,
+    image: "https://images.unsplash.com/photo-1609177393985-804cd5f98670?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Fitness Tracker",
+    price: 49.99,
+    description: "Monitor your health and activity with this fitness tracker.",
+    quantity: 1,
+  },
+  {
+    id: 7,
+    image: "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?q=80&w=812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Travel Bottle",
+    price: 19.99,
+    description: "Stainless steel bottle to keep your drinks hot or cold.",
+    quantity: 1,
+  },
+  {
+    id: 8,
+    image: "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=400&q=80",
+    title: "Desk Lamp",
+    price: 24.99,
+    description: "Modern LED desk lamp with adjustable brightness.",
+    quantity: 1,
+  },
+];
