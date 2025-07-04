@@ -1,10 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector } from "react-redux";
-
+import counterSlice from "./slices/counterSlice";
+//! Prfix code snippet { rtkstore }
 // ...
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    counter: counterSlice,
+  },
 });
 
 //! Define RootState and AppDispatch types
