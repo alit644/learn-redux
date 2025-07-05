@@ -1,24 +1,15 @@
-import { useEffect } from "react";
 import "./App.css";
-import { fetchProducts } from "./App/Slices/productsSlice";
-import { useAppDispatch, useAppSelector } from "./App/store";
+import { useGetProdctsListQuery } from "./App/Slices/RTK Query/produtcsApiSlice";
 
 function App() {
-  const dispatch = useAppDispatch();
+  const { isLoading, data, error } = useGetProdctsListQuery({});
+  console.log(isLoading, data, error);
 
-  useEffect(() => {
-    dispatch(fetchProducts());
-  } ,[dispatch])
-  const {isLoading  , error} = useAppSelector((state) => state.products)
-  // console.log(data.products)
-  return <>
-    <div className="App">
-      <h1>Products</h1>
-      {isLoading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      
-    </div>
-  </>;
+  return (
+    <>
+      <div className="App"></div>
+    </>
+  );
 }
 
 export default App;

@@ -1,10 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector } from "react-redux";
-import productsSlice from "./Slices/productsSlice";
+import { productsApiSlice } from "./Slices/RTK Query/produtcsApiSlice";
 
 export const store = configureStore({
   reducer: {
-    products: productsSlice,
+    [productsApiSlice.reducerPath]: productsApiSlice.reducer,
+  },
+  middleware(getDefaultMiddleware) {
+    return getDefaultMiddleware().concat(productsApiSlice.middleware);
   },
 });
 
